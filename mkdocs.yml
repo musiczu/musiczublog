@@ -1,0 +1,73 @@
+site_name: My Blog
+site_description: an example blog set up following the tutorial
+site_url: http://www.example.com
+
+theme:
+  name: material
+  features:
+    - navigation.indexes
+    - blog
+    - navigation.tabs
+    - navigation.footer
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - navigation.top
+    - toc.integrate
+    - navigation.sections
+    - navigation.expand
+    - content.tooltips
+    - navigation.instant
+    - palette.toggle  # Enables the dark mode toggle
+    - palette
+  palette:
+    - scheme: default
+      primary: dark blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+plugins:
+  - search
+  - blog:
+      blog_toc: true
+      archive_date_format: MMMM yyyy
+      categories_allowed:
+          - HomeLabs
+          - News
+      pagination_per_page: 5
+      archive_pagination_per_page: 10
+      categories_pagination_per_page: 10
+  - tags:
+        tags_file: blog/tags.md
+
+extra_css:
+  - stylesheets/extra.css
+
+
+nav:
+  - Home: index.md
+  - Blog:
+      - Overview: blog/index.md
+      - Tags: blog/tags.md
+  - Homelabs:
+      - Overview: Homelabs/index.md
+      - AI: Homelabs/AI/index.md
+      - Cybersecurity: Homelabs/Cybersecurity/index.md
+      - Proxmox:
+        - Overview: Homelabs/Proxmox/index.md
+        - Hardware: Homelabs/Proxmox/hardware.md
+        - Installation : Homelabs/Proxmox/Proxmox Installation.md
+        - Ubuntu Installation : Homelabs/Proxmox/Ubuntu.md
+        - GPU Passthrough  : Homelabs/Proxmox/GPU-passthrough.md
+
+      - Tags: Homelabs/tags.md
+
+
+
