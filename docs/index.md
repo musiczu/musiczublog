@@ -1,17 +1,27 @@
-# Welcome to MkDocs
+# Welcome to My Blog
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+I am a **Cybersecurity enthusiast**, and I am also passionate about building **homelabs**.
 
-## Project layout
+## On-Going Projects
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- **Automated Malware Detection using Machine Learning** _(60%)_
+    - I have finished the AI model part.
+
+- **Local LLM using an Old PC with DeepSeek** _(10%)_
+    - Using Old PC with Proxmox , Installed Ubuntu desktop , Pytorch ollama openwebui
+    - I am currently studying about fine-tuning part
+
+- **Real-time Intrusion Detection System** _(0%)_
+    - just got an idea but have no time 
+- **Studying Hosting and CI/CD**
+
+
+you can go through my experience via nav-bar above or the following link
+
+## 📖 Read My  Blog , Docs
+
+- [🔗 Blog](blog/index.md)
+- [🔗 Proxmox Setup Guide](Homelabs/Proxmox/index.md)
+- [🔗 AI Malware Detection Overview](blog/ai-malware-detection.md)
