@@ -2,8 +2,11 @@ site_name: My Blog
 site_description: an example blog set up following the tutorial
 site_url: http://www.example.com
 
+
 theme:
   name: material
+  highlightjs: false
+
   features:
     - navigation.indexes
     - blog
@@ -22,16 +25,25 @@ theme:
     - palette.toggle  # Enables the dark mode toggle
     - palette
   palette:
-    - scheme: default
-      primary: dark blue
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-    - scheme: slate
-      primary: deep purple
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
+      - scheme: default
+        primary: blue grey
+        accent: teal
+        toggle:
+          icon: material/weather-night
+          name: Switch to dark mode
+      - scheme: slate
+        primary: blue
+        accent: light green
+        toggle:
+          icon: material/weather-sunny
+          name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
 
 plugins:
   - search
@@ -48,9 +60,19 @@ plugins:
   - tags:
         tags_file: blog/tags.md
 
+
+
 extra_css:
   - stylesheets/extra.css
 
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.1.0/fontfaceobserver.standalone.js
+  - assets/js/strip-shell-prompts.js
+extra:
+  font:
+    text: Roboto
+    code: Fira Code
 
 nav:
   - Home: index.md
@@ -65,7 +87,6 @@ nav:
         - Overview: Homelabs/Proxmox/index.md
         - Hardware: Homelabs/Proxmox/hardware.md
         - Installation : Homelabs/Proxmox/Proxmox Installation.md
-        - Ubuntu Installation : Homelabs/Proxmox/Ubuntu.md
         - GPU Passthrough  : Homelabs/Proxmox/GPU-passthrough.md
         - Services : 
           - Overview : Homelabs/Proxmox/services/index.md
@@ -73,6 +94,16 @@ nav:
               - Overview: Homelabs/Proxmox/services/Gitea/index.md
               - Installation: Homelabs/Proxmox/services/Gitea/installation.md
       - Tags: Homelabs/tags.md
+  - What's in My Labs : 
+      - services/index.md
+      - Services : 
+          - Overview : services/index.md
+          - Gitea:
+              - Overview: services/Gitea/index.md
+              - Installation: services/Gitea/installation.md
+          - database:
+              - Overview: services/database/index.md
+              - Installation: services/database/installation.md
   - Cloudlabs : Cloudlabs/index.md
       
 

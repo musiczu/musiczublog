@@ -1,0 +1,19 @@
+/* Indent archive and categories items */
+.md-sidebar__inner .md-nav__item {
+    padding-left: 5px; /* Adjust indentation */
+}
+
+/* Specific indentation for nested blog sidebar items */
+.md-nav__list {
+    margin-left: 7.5px;
+}
+
+.md-nav__list .md-nav__list {
+    margin-left: 10px; /* More indentation for sub-items */
+}
+
+/* Ensure links still align properly */
+.md-nav__item a {
+    display: block;
+    padding: 2px 4px;
+}
