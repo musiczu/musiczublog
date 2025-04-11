@@ -315,6 +315,26 @@ git push -u origin main
 ignore the typo it just a rush typing to test the connection
 
 
+### let create a repo from gitea
+
+![Alt text](./img/test0.png "a title")
+
+
+then git clone to local machine
+
+![Alt text](./img/test1.png "a title")
+
+Create Some `readme.md` then push to gitea
+
+![Alt text](./img/test2.png "a title")
+
+Now we can successfully self-hosted our git
+![Alt text](./img/test3.png "a title")
+
+That is all for gitea service you can push your project and anything like this
+
+
+
 
 
 That is all for gitea service you can push your project and anything like this
@@ -325,4 +345,5 @@ like github
 
 ![Alt text](./img/gitea2.png "a title")
 
-Thank for your cooperation
+
+

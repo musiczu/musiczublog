@@ -69,6 +69,9 @@ nav:
         - GPU Passthrough  : Homelabs/Proxmox/GPU-passthrough.md
         - Services : 
           - Overview : Homelabs/Proxmox/service/index.md
+          - Gitea:
+              - Overview: Homelabs/Proxmox/service/Gitea/index.md
+              - Installation: Homelabs/Proxmox/service/Gitea/installation.md
       - Tags: Homelabs/tags.md
   - Cloudlabs : Cloudlabs/index.md
       
