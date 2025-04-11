@@ -68,10 +68,10 @@ nav:
         - Ubuntu Installation : Homelabs/Proxmox/Ubuntu.md
         - GPU Passthrough  : Homelabs/Proxmox/GPU-passthrough.md
         - Services : 
-          - Overview : Homelabs/Proxmox/service/index.md
+          - Overview : Homelabs/Proxmox/services/index.md
           - Gitea:
-              - Overview: Homelabs/Proxmox/service/Gitea/index.md
-              - Installation: Homelabs/Proxmox/service/Gitea/installation.md
+              - Overview: Homelabs/Proxmox/services/Gitea/index.md
+              - Installation: Homelabs/Proxmox/services/Gitea/installation.md
       - Tags: Homelabs/tags.md
   - Cloudlabs : Cloudlabs/index.md
       
