@@ -156,9 +156,9 @@ PasswordAuthentication no
 
 ```
 
-This configuration provide you 2 things
-1. No Root Login Accepted
-2. Change openssh port to 2222 avoid port conflict with Gitea
+This configuration provide you 2 things <br>
+1. No Root Login Accepted <br>
+2. Change openssh port to 2222 avoid port conflict with Gitea <br>
 
 then
 
@@ -330,12 +330,6 @@ Create Some `readme.md` then push to gitea
 
 Now we can successfully self-hosted our git
 ![Alt text](./img/test3.png "a title")
-
-That is all for gitea service you can push your project and anything like this
-
-
-
-
 
 That is all for gitea service you can push your project and anything like this
 
