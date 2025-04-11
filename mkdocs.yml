@@ -67,8 +67,11 @@ nav:
         - Installation : Homelabs/Proxmox/Proxmox Installation.md
         - Ubuntu Installation : Homelabs/Proxmox/Ubuntu.md
         - GPU Passthrough  : Homelabs/Proxmox/GPU-passthrough.md
-
+        - Services : 
+          - Overview : Homelabs/Proxmox/service/index.md
       - Tags: Homelabs/tags.md
+  - Cloudlabs : Cloudlabs/index.md
+      
 
 
 
