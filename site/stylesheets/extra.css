@@ -1,19 +1,169 @@
+
+
 /* Indent archive and categories items */
 .md-sidebar__inner .md-nav__item {
-    padding-left: 5px; /* Adjust indentation */
+    padding-left: px; /* Adjust indentation */
+    padding-right: 0px;
 }
 
 /* Specific indentation for nested blog sidebar items */
 .md-nav__list {
-    margin-left: 7.5px;
+    margin-left: 0px;
 }
 
 .md-nav__list .md-nav__list {
-    margin-left: 10px; /* More indentation for sub-items */
+    margin-left: 0px; /* More indentation for sub-items */
 }
 
 /* Ensure links still align properly */
 .md-nav__item a {
     display: block;
-    padding: 2px 4px;
+    padding: 1px 2px;
 }
+
+/* Stronger overrides */
+/* ✅ Code block container */
+/* Code block styling (both themes) */
+pre code {
+    border: 1px solid #888888;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+    display: block !important;
+    overflow-x: auto !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+    font-family: 'Fira Code', 'Source Code Pro', monospace !important;
+  }
+  
+  /* Inline code - Light mode */
+  [data-md-color-scheme="default"] :not(pre) > code {
+    background-color: #f0f4f8 !important;
+    color: #d63384 !important;
+  }
+  
+  /* Inline code - Dark mode */
+  [data-md-color-scheme="slate"] :not(pre) > code {
+    background-color: #1e2a33 !important;
+    color: #80ffea !important;
+  }
+  
+  /* Code block - Light mode */
+  [data-md-color-scheme="default"] pre code {
+    background-color: #f7f7f9 !important;
+    color: #2d2d2d !important;
+  }
+  
+  /* Code block - Dark mode */
+  [data-md-color-scheme="slate"] pre code {
+    background-color: #1e1e2e !important;
+    color: #eeeeee !important;
+  }
+
+  [data-md-color-scheme="default"] pre code {
+    border: 1px solid #cccccc;  /* light gray border */
+  }
+  
+  /* 🌚 Dark mode */
+  [data-md-color-scheme="slate"] pre code {
+    border: 1px solid #444c56;  /* dark gray border */
+  }
+
+  pre[class*="language-sh"] code span.__span::before,
+  pre[class*="language-bash"] code span.__span::before,
+  pre[class*="language-shell"] code span.__span::before {
+    content: "$ ";
+    color: #81c784;
+    margin-right: 0.3rem;
+  }
+  
+  /* Avoid showing $ on empty lines */
+  pre code span.__span:empty::before {
+    content: "" !important;
+  }
+  
+
+  
+
+  [data-md-color-scheme="slate"] {
+    --md-primary-bg-color: #2c3440;      /* Softer, readable header background */
+    --md-primary-fg-color: #f5f5f5;      /* Bright white header text */
+  }
+  
+  [data-md-color-scheme="slate"] {
+    --md-sidebar-bg-color: #1c1f26; /* lighter sidebar background */
+    --md-typeset-color: #e6e6e6;     /* general text color */
+  }
+  
+  /* Optional: make nav links more readable */
+  [data-md-color-scheme="slate"] .md-nav__link {
+    color: #e0e0e0 !important;
+  }
+  
+  
+  /* Optional: active item styling */
+  [data-md-color-scheme="slate"] .md-nav__link--active {
+    color: #00ff88 !important;
+    font-weight: bold;
+  }
+  
+  [data-md-color-scheme="slate"] .md-nav__link {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  [data-md-color-scheme="slate"] .md-nav__link:hover {
+    /*background-color: #1a331a !important; /* Dark green background */
+    color: #00ff88 !important;           /* Neon green text */
+  }
+  
+  /* Bold top navigation bar text (tabs or links) */
+.md-header__topic,
+.md-tabs__link {
+  font-weight: bold !important;
+}
+
+
+
+  
+/*title heading*/
+[data-md-color-scheme="default"] h1,
+[data-md-color-scheme="default"] h2,
+[data-md-color-scheme="default"] h3,
+[data-md-color-scheme="default"] h4 {
+  color: #1e1e1e !important;
+}
+
+[data-md-color-scheme="slate"] h1,
+[data-md-color-scheme="slate"] h2,
+[data-md-color-scheme="slate"] h3,
+[data-md-color-scheme="slate"] h4 {
+  color: #f0f0f0 !important;
+}
+
+
+/*Block Quote*/
+
+/* 🌚 Dark mode: slim blockquote */
+[data-md-color-scheme="slate"] blockquote {
+    background-color: #1f1f2b !important;
+    border-left: 2px solid #00ff88;
+    color: #d0d0d0 !important;
+    padding: 0.3rem 0.4rem;
+    margin: 0.4rem 0;
+    font-size: 0.75rem;
+    line-height: 0.5;
+    border-radius: 4px;
+  }
+  
+  /* 🌞 Light mode: slim blockquote */
+  [data-md-color-scheme="default"] blockquote {
+    background-color: #f5f5f5;
+    border-left: 2px solid #4caf50;
+    color: #333;
+    padding: 0.3rem 0.4rem;
+    margin: 0.4rem 0;
+    font-size: 0.75rem;
+    line-height: 0.5;
+    border-radius: 4px;
+  }
+  
+  
+

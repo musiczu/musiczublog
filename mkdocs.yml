@@ -67,8 +67,10 @@ extra_css:
 
 
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.1.0/fontfaceobserver.standalone.js
   - assets/js/strip-shell-prompts.js
+  - https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.1.0/fontfaceobserver.standalone.js
+  
+
 extra:
   font:
     text: Roboto
