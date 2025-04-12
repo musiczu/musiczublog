@@ -32,5 +32,4 @@ super_collections==0.5.3
 termcolor==2.5.0
 urllib3==2.3.0
 watchdog==6.0.0
-pymdown-extensions>=10.0
 mkdocs-git-revision-date-localized-plugin>=1.2

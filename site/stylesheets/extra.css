@@ -140,6 +140,13 @@ pre code {
 
 
 /*Block Quote*/
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  border-left: 5px solid #00ff88 !important; /* neon green */
+}
+
+[data-md-color-scheme="default"] .md-typeset blockquote {
+  border-left: 5px solid #888888 !important; /* gray */
+}
 
 /* 🌚 Dark mode: slim blockquote */
 [data-md-color-scheme="slate"] blockquote {
@@ -165,7 +172,28 @@ pre code {
   border-radius: 3px;
 }
 
+/*Link */
+/* 🌚 Neon green links for dark mode */
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #00ff88 !important;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+  text-decoration: none;
+}
 
-  
+/* Hover effect with soft neon glow */
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: #00fff8 !important;
+  text-shadow: 0 0 1px #00ff88, 0 0 2px #00ff88;
+  text-decoration: underline;
+}
   
 
+[data-md-color-scheme="default"] .md-typeset a {
+  color: #1a73e8; /* subtle blue */
+  transition: color 0.3s ease;
+}
+
+[data-md-color-scheme="default"] .md-typeset a:hover {
+  color: #004dcc;
+  text-decoration: underline;
+}
