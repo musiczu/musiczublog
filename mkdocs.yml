@@ -43,7 +43,19 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.highlight:
       anchor_linenums: true
+      auto_title: false
+      linenums: false
       use_pygments: true
+      guess_lang: false
+  - pymdownx.snippets
+  - pymdownx.escapeall
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
 
 plugins:
   - search
