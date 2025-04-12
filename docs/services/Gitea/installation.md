@@ -6,7 +6,7 @@ There are some option for you to install for me i love to install from binary an
 
 First you have to create your Linux container aka. Lxc or CT (in proxmox) then install gitea
 
-```sh
+```sh title="Terminal"
 $ apt update && apt $ full-upgrade -y
 $ apt install net-tools git
 
@@ -31,14 +31,18 @@ $ adduser \
    git
 ```
 
-> !! This user create for gitea service only if you want to create some user to use inside this server you shoud considered create a new user !!
+!!! warning
+    This user create for gitea service only if you want to create some user 
+    to use inside this server you shoud considered create a new user
+
+
 
 ### Config mount volume at the start of installation on proxmox
 
-for me
-→ root boot drive 8gb  mounted at /
+for me <br>
+→ root boot drive 8gb  mounted at `/`
 
-→ mp0 mount drive at /var/lib/gitea
+→ **mp0** mount drive at `/var/lib/gitea`
 
 ![Alt text](./img/CT_example1.png "a title")
 

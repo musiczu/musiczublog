@@ -1,7 +1,8 @@
 # 🚧 Under Construction
 
-> ⚠️ This page is still under construction.  
-I'm currently working on something awesome here — please check back soon!
+!!! note
+    ⚠️ This page is still under construction.  
+    I'm currently working on something awesome here — please check back soon!
 
 ---
 

@@ -1574,52 +1574,52 @@
 <hr />
 <h2 id="2-enable-iommu-in-proxmox-grub-configuration"><strong>2. Enable IOMMU in Proxmox GRUB Configuration</strong></h2>
 <p>Edit the GRUB configuration:
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>nano<span class="w"> </span>/etc/default/grub
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>nano<span class="w"> </span>/etc/default/grub
 </code></pre></div></p>
 <p>Change this line:
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&quot;quiet&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&quot;quiet&quot;</span>
 </code></pre></div>
 to:</p>
 <ul>
 <li><strong>For Intel CPUs</strong>:
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&quot;quiet intel_iommu=on iommu=pt&quot;</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&quot;quiet intel_iommu=on iommu=pt&quot;</span>
 </code></pre></div></li>
 <li><strong>For AMD CPUs</strong>:
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&quot;quiet amd_iommu=on iommu=pt&quot;</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&quot;quiet amd_iommu=on iommu=pt&quot;</span>
 </code></pre></div></li>
 </ul>
 <p>Save and update GRUB:
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>update-grub
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>update-grub
 </code></pre></div></p>
 <hr />
 <h2 id="3-load-iommu-kernel-modules"><strong>3. Load IOMMU Kernel Modules</strong></h2>
 <p>Edit the modules file:
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>nano<span class="w"> </span>/etc/modules
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>nano<span class="w"> </span>/etc/modules
 </code></pre></div>
 Add the following lines at the bottom:
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>vfio
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>vfio
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>vfio_pci
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>vfio_iommu_type1
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>vfio_virqfd
 </code></pre></div>
 Save and exit.</p>
 <p>Update the initramfs:
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>update-initramfs<span class="w"> </span>-u
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>update-initramfs<span class="w"> </span>-u
 </code></pre></div></p>
 <hr />
 <h2 id="4-verify-iommu-is-enabled"><strong>4. Verify IOMMU is Enabled</strong></h2>
 <h3 id="step-1-reboot"><strong>Step 1: Reboot</strong></h3>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>reboot
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>reboot
 </code></pre></div>
 <h3 id="step-2-check-iommu-status"><strong>Step 2: Check IOMMU Status</strong></h3>
-<p><div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>dmesg<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>iommu
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>dmesg<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>iommu
 </code></pre></div>
 Expected output:
-<div class="highlight"><span class="filename">Text Only</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>DMAR: IOMMU enabled
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>DMAR: IOMMU enabled
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>AMD-Vi: Enabling IOMMU at 0000:00:00.2 
 </code></pre></div></p>
 <h3 id="step-3-verify-pci-devices"><strong>Step 3: Verify PCI Devices</strong></h3>
-<p><div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>lspci<span class="w"> </span>-nnk<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>-A3<span class="w"> </span><span class="s2">&quot;vga\|gpu&quot;</span>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>lspci<span class="w"> </span>-nnk<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>-A3<span class="w"> </span><span class="s2">&quot;vga\|gpu&quot;</span>
 </code></pre></div>
 If your <strong>GPU or PCI device appears</strong>, IOMMU is successfully enabled.</p>
 <hr />
