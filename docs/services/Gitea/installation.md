@@ -111,6 +111,7 @@ $ sudo systemctl enable gitea
 $ sudo systemctl start gitea
 ```
 
+
 ### Create a new user to config inside this server
 
 Instead of using root user to do anyhing it a best practice to using another sudoer user instead
@@ -197,7 +198,7 @@ Host gitea.local
 
 no need to do complicate thing because when you gen ssh-keygen the .pub and other key will be in this folder
 
-### Try Connecting with port 2222
+**Try Connecting with port 2222**
 
 `ssh -p 2222 myuser@<your-domain>`
 
@@ -207,18 +208,28 @@ That work!! nice!!
 
 Now visiting gitea server domain
 
-`192.168.1.176:3000` -> change to your private IPv4 address
+`192.168.1.100:3000` -> change to your private IPv4 address
 
 
 > It will pop up configuration -> for beginner i recommend using SQLite3 and also don't forget to create a admin user 
 
 ![Alt text](./img/initial_config.png "a title")
 
+if you encounter that terminal stuck at start service -> navigate to `http://<ip>:<port>` normally i assume you use  `http:192.168.1.100:3000` 
+
+After that config the admin user and config 
+
+
+1. SSH_DOMAIN = `your.homelabs.local`
+2. DOMAIN = \<IPv4 address>
+3. HTTP_PORT = 3000
+4. BASE_URL = `http://your.homelabs.local/` or `http://<IPv4-address>:3000/` -> use you desire domain name but don't forget to add this domain name to route to your gitea server in the future i recommended using SSL through reverse proxy but now you can use this
+
 I think i will change the db in the future 
 
 
 
-### Now test ssh to a repository
+** Now test ssh to a repository **
 
 First you have to add your public key to the gitea **ssh key / gpg key**
 
@@ -237,7 +248,7 @@ type $env:USERPROFILE\.ssh\gitea_testuser.pub
 
 
 
-### Next is the Problem , the part that document doesn't mention
+## **Next is the Problem , the part that document doesn't mention**
 
 I try it myself, i follow the instruction but some how cannot push my code on the repo
 
@@ -245,7 +256,7 @@ and i found that it a port conflict problem and sometime gitea built-in ssh serv
 
 
 
-#### The editted nano /etc/gitea/app.ini
+**The editted nano /etc/gitea/app.ini**
 
 note that we have config the System sshd to use port 2222 as a ssh port
 
@@ -302,7 +313,7 @@ $ sudo ss -tulnp | grep :22
 okay so it may work now
 
 
-## Next try to test push,pull using ssh
+**Next try to test push,pull using ssh**
 
 just using some random coding folder then following this step
 
@@ -323,7 +334,7 @@ git push -u origin main
 ignore the typo it just a rush typing to test the connection
 
 
-### let create a repo from gitea
+## **let create a repo from gitea**
 
 ![Alt text](./img/test0.png "a title")
 

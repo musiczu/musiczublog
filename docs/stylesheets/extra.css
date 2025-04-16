@@ -12,7 +12,7 @@
 }
 
 .md-nav__list .md-nav__list {
-    margin-left: 0px; /* More indentation for sub-items */
+    margin-left: 8px; /* More indentation for sub-items */
 }
 
 /* Ensure links still align properly */

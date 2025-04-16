@@ -109,6 +109,10 @@ nav:
           - Gitea:
               - Overview: Homelabs/Proxmox/services/Gitea/index.md
               - Installation: Homelabs/Proxmox/services/Gitea/installation.md
+          - Docker-server:
+              - Overview: ./services/Docker-server/index.md
+              - Set-up: ./services/Docker-server/Set-up.md
+              - portainer: ./services/Docker-server/portainer.md
       - Tags: Homelabs/tags.md
   - What's in My Labs : 
       - services/index.md
@@ -120,6 +124,16 @@ nav:
           - database:
               - Overview: services/database/index.md
               - Installation: services/database/installation.md
+          - Docker-server:
+              - Overview: services/Docker-server/index.md
+              - Set-up: services/Docker-server/Set-up.md
+          - Pi-hole:
+              - Overview: services/Pi-hole/index.md
+              - Installation: services/Pi-hole/installation.md
+      - Security : 
+          - SSL: security/ssl/ssl.md
+          - Tunnel: security/tunnel/tunnel.md
+          - VPN: security/tunnel/tunnel.md
   - Cloudlabs : Cloudlabs/index.md
       
 
