@@ -127,8 +127,7 @@ nav:
               - Overview: services/Docker-server/index.md
               - Set-up: services/Docker-server/Set-up.md
           - Pi-hole:
-              - Overview: services/Pi-hole/index.md
-              - About Pi-hole: services/Pi-hole/About.md
+              - Overview: services/Pi-hole/About.md
       - Security : 
           - Overview: security/index.md
           - SSL: security/ssl/ssl.md
