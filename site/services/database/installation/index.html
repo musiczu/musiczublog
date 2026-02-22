@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="an example blog set up following the tutorial">
+        <meta name="description" content="Personal knowledge base, homelab documentation and blog">
       
       
       
-        <link rel="canonical" href="http://www.example.com/Homelabs/Proxmox/Proxmox%20Installation/">
+        <link rel="canonical" href="https://example.com/services/database/installation/">
       
       
-        <link rel="prev" href="../hardware/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../GPU-passthrough/">
+        <link rel="next" href="../../Docker-server/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Installation - My Blog</title>
+        <title>Installation - My Homelab & Knowledge Blog</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#proxmox-installation" class="md-skip">
+        <a href="#under-construction" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="My Blog" class="md-header__button md-logo" aria-label="My Blog" data-md-component="logo">
+    <a href="../../.." title="My Homelab &amp; Knowledge Blog" class="md-header__button md-logo" aria-label="My Homelab & Knowledge Blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,7 +106,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            My Blog
+            My Homelab & Knowledge Blog
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -250,13 +250,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../Homelabs/" class="md-tabs__link">
           
   
   
@@ -274,11 +272,22 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../services/" class="md-tabs__link">
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -288,6 +297,9 @@
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -335,13 +347,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="My Blog" class="md-nav__button md-logo" aria-label="My Blog" data-md-component="logo">
+    <a href="../../.." title="My Homelab &amp; Knowledge Blog" class="md-nav__button md-logo" aria-label="My Homelab & Knowledge Blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    My Blog
+    My Homelab & Knowledge Blog
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -632,8 +644,6 @@
       
   
   
-    
-  
   
   
     
@@ -655,23 +665,22 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../../Homelabs/" class="md-nav__link ">
               
   
   
@@ -684,13 +693,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Homelabs
@@ -706,7 +715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AI/" class="md-nav__link">
+      <a href="../../../Homelabs/AI/" class="md-nav__link">
         
   
   
@@ -729,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cybersecurity/" class="md-nav__link">
+      <a href="../../../Homelabs/Cybersecurity/" class="md-nav__link">
         
   
   
@@ -749,8 +758,6 @@
                 
   
   
-    
-  
   
   
     
@@ -774,21 +781,20 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../../Homelabs/Proxmox/" class="md-nav__link ">
               
   
   
@@ -801,13 +807,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             Proxmox
@@ -823,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/" class="md-nav__link">
+      <a href="../../../Homelabs/Proxmox/hardware/" class="md-nav__link">
         
   
   
@@ -843,32 +849,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Installation
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../Homelabs/Proxmox/proxmox-installation/" class="md-nav__link">
         
   
   
@@ -879,62 +863,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-download-iso-image-of-proxmox" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 1 Download iso image of proxmox
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-using-rufus-to-burn-iso-image-to-a-usb-drive" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2 Using Rufus to burn iso image to a Usb drive
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-plug-and-turn-on-target-machine" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3 Plug and turn on target machine
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#my-tips" class="md-nav__link">
-    <span class="md-ellipsis">
-      My tips
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -947,7 +875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../GPU-passthrough/" class="md-nav__link">
+      <a href="../../../Homelabs/Proxmox/GPU-passthrough/" class="md-nav__link">
         
   
   
@@ -978,6 +906,8 @@
       
         
       
+        
+      
     
     
     
@@ -997,7 +927,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../services/" class="md-nav__link ">
+            <a href="../../../Homelabs/Proxmox/services/" class="md-nav__link ">
               
   
   
@@ -1059,7 +989,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../services/Gitea/" class="md-nav__link ">
+            <a href="../../../Homelabs/Proxmox/services/Gitea/" class="md-nav__link ">
               
   
   
@@ -1094,12 +1024,130 @@
   
   
     <li class="md-nav__item">
-      <a href="../services/Gitea/installation/" class="md-nav__link">
+      <a href="../../../Homelabs/Proxmox/services/Gitea/installation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4_5_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Docker-server/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Docker-server
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4_5_3" id="__nav_3_4_5_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_4_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Docker-server
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Docker-server/Set-up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Set-up
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Docker-server/portainer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    portainer
     
   </span>
   
@@ -1141,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tags.md" class="md-nav__link">
+      <a href="../../../Homelabs/tags.md" class="md-nav__link">
         
   
   
@@ -1168,38 +1216,40 @@
       
   
   
+    
   
   
+  
     
     
       
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../../services/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
   
   
   <span class="md-ellipsis">
@@ -1208,16 +1258,10 @@
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             What's in My Labs
@@ -1225,11 +1269,11 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-            
-              
                 
   
   
+    
+  
   
   
     
@@ -1243,26 +1287,31 @@
       
         
       
-    
-    
-    
-      
+        
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    
       
-        
+      
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../services/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -1275,14 +1324,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_1" id="__nav_4_1_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             Services
           </label>
@@ -1320,11 +1369,11 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1_2" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../services/Gitea/" class="md-nav__link ">
+            <a href="../../Gitea/" class="md-nav__link ">
               
   
   
@@ -1337,14 +1386,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_2_2" id="__nav_4_2_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_1_2" id="__nav_4_1_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_2">
             <span class="md-nav__icon md-icon"></span>
             Gitea
           </label>
@@ -1359,7 +1408,109 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../services/Gitea/installation/" class="md-nav__link">
+      <a href="../../Gitea/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation & Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    database
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_1_3" id="__nav_4_1_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            database
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1370,6 +1521,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1413,16 +1565,16 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2_3" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1_4" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../services/database/" class="md-nav__link ">
+            <a href="../../Docker-server/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    database
+    Docker-server
     
   </span>
   
@@ -1430,16 +1582,16 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_2_3" id="__nav_4_2_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_1_4" id="__nav_4_1_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4">
             <span class="md-nav__icon md-icon"></span>
-            database
+            Docker-server
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1452,12 +1604,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../services/database/installation.md" class="md-nav__link">
+      <a href="../../Docker-server/Set-up/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Installation
+    Set-up
     
   </span>
   
@@ -1471,6 +1623,328 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_5" id="__nav_4_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pi-hole
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            Pi-hole
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pi-hole/About.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../security/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Security
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security/ssl/ssl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SSL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security/tunnel/tunnel.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tunnel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Synchronization/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Synchronization
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Synchronization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Synchronization/rsync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    rsync
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Synchronization/syncthing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    syncthing
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1529,22 +2003,15 @@
 
 
 
-<h1 id="proxmox-installation">Proxmox Installation</h1>
-<h2 id="step-1-download-iso-image-of-proxmox">Step 1 Download iso image of proxmox</h2>
-<p>Download iso image of proxmox <a href="https://www.proxmox.com/en/downloads/proxmox-virtual-environment/iso">proxmox</a></p>
-<h2 id="step-2-using-rufus-to-burn-iso-image-to-a-usb-drive">Step 2 Using Rufus to burn iso image to a Usb drive</h2>
-<p>using <a href="https://rufus.ie/en/">rufus</a> to burn it to usb flash drive. this method use to make usb flash drive as a boot driver</p>
-<h2 id="step-3-plug-and-turn-on-target-machine">Step 3 Plug and turn on target machine</h2>
-<p>plug usb to target machine and turn on the machine </p>
-<p>following the instruction <a href="https://www.proxmox.com/en/products/proxmox-virtual-environment/get-started">Installation guide</a> → choose the main storage for installing proxmox 
-if you don’t see your target storage, let see you just bought  a  new ssd you have to clean the disk before hand, otherwise it cannot detect the storage</p>
-<p>after successfully installing proxmox on target storage reboot the machine</p>
-<p>some time you have to open a bios , boot loader and modify boot option to use your target disk to manually boot using your target proxmox storage</p>
-<h2 id="my-tips">My tips</h2>
-<ul>
-<li>using UEFI storage for Proxmox os boot loader</li>
-<li>If you want to using a GPU in your VMs don't forget to Enable VT-d for Intel CPU  , IOMMU for AMD cpu in the Bios setup</li>
-</ul>
+<h1 id="under-construction">🚧 Under Construction</h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>⚠️ This page is still under construction.<br />
+I'm currently working on something awesome here — please check back soon!</p>
+</div>
+<hr />
+<p>In the meantime, feel free to explore other parts of my site using the navigation bar.</p>
+<p>🛠️ Progress is being made behind the scenes. Stay tuned!</p>
 
 
 
@@ -1580,7 +2047,7 @@ if you don’t see your target storage, let see you just bought  a  new ssd you 
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../hardware/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Hardware">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1590,20 +2057,20 @@ if you don’t see your target storage, let see you just bought  a  new ssd you 
                 Previous
               </span>
               <div class="md-ellipsis">
-                Hardware
+                Overview
               </div>
             </div>
           </a>
         
         
           
-          <a href="../GPU-passthrough/" class="md-footer__link md-footer__link--next" aria-label="Next: GPU Passthrough">
+          <a href="../../Docker-server/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                GPU Passthrough
+                Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">

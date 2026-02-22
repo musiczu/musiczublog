@@ -1,6 +1,6 @@
-site_name: My Blog
-site_description: an example blog set up following the tutorial
-site_url: http://www.example.com
+site_name: My Homelab & Knowledge Blog
+site_description: Personal knowledge base, homelab documentation and blog
+site_url: https://example.com
 
 
 theme:
@@ -102,7 +102,7 @@ nav:
       - Proxmox:
         - Overview: Homelabs/Proxmox/index.md
         - Hardware: Homelabs/Proxmox/hardware.md
-        - Installation : Homelabs/Proxmox/Proxmox Installation.md
+        - Installation : Homelabs/Proxmox/proxmox-installation.md
         - GPU Passthrough  : Homelabs/Proxmox/GPU-passthrough.md
         - Services : 
           - Overview : Homelabs/Proxmox/services/index.md
@@ -110,9 +110,9 @@ nav:
               - Overview: Homelabs/Proxmox/services/Gitea/index.md
               - Installation: Homelabs/Proxmox/services/Gitea/installation.md
           - Docker-server:
-              - Overview: ./services/Docker-server/index.md
-              - Set-up: ./services/Docker-server/Set-up.md
-              - portainer: ./services/Docker-server/portainer.md
+              - Overview: services/Docker-server/index.md
+              - Set-up: services/Docker-server/Set-up.md
+              - portainer: services/Docker-server/portainer.md
       - Tags: Homelabs/tags.md
   - What's in My Labs : 
       - Services : 
@@ -132,7 +132,6 @@ nav:
           - Overview: security/index.md
           - SSL: security/ssl/ssl.md
           - Tunnel: security/tunnel/tunnel.md
-          - VPN: security/tunnel/tunnel.md
       - Synchronization : 
           - Overview: Synchronization/index.md
           - rsync: Synchronization/rsync/index.md
