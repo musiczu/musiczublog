@@ -137,6 +137,9 @@ nav:
           - rsync: Synchronization/rsync/index.md
           - syncthing: Synchronization/syncthing/index.md
 
+  - Web Vulnerability: 
+          - Overview: web-vulnerability/index.md
+          - Prototype-pollution: web-vulnerability/prototype-pollution/Prototype-pollution.md
   - Cloudlabs : Cloudlabs/index.md
       
 
