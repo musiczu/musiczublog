@@ -1,7 +1,5 @@
 # Welcome to My Blog
 
-
-
 I am a **Cybersecurity enthusiast**, and I am also passionate about building **homelabs**.
 
 ## On-Going Projects
@@ -15,6 +13,7 @@ I am a **Cybersecurity enthusiast**, and I am also passionate about building **h
 
 - **Real-time Intrusion Detection System** _(0%)_
     - just got an idea but have no time 
+
 - **Studying Hosting and CI/CD**
 
 
@@ -24,4 +23,5 @@ you can go through my experience via nav-bar above or the following link
 
 - [🔗 Blog](blog/index.md)
 - [🔗 Proxmox Setup Guide](Homelabs/Proxmox/index.md)
-- [🔗 AI Malware Detection Overview](blog/ai-malware-detection.md)
+- [🔗 AI Malware Detection Overview](blog/index.md)
+
