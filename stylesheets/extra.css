@@ -1,0 +1,269 @@
+/* ==========================================================================
+   Modern UI Customizations for MkDocs Material (Original Theme Colors)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Theme Variables & Color Palettes
+   -------------------------------------------------------------------------- */
+:root {
+  --md-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --md-code-font-family: "Fira Code", "JetBrains Mono", "Courier New", monospace;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Light Theme Variables */
+[data-md-color-scheme="default"] {
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-border: rgba(226, 232, 240, 0.8);
+  --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+  --card-shadow-hover: 0 12px 28px -4px rgba(0, 150, 136, 0.15), 0 4px 12px -2px rgba(0, 0, 0, 0.05);
+  --badge-bg: #e6f4f1;
+  --badge-text: #00897b;
+}
+
+/* Original Dark Theme Variables (#2c3440 header, #1c1f26 sidebar, #00ff88 neon green) */
+[data-md-color-scheme="slate"] {
+  --md-primary-bg-color: #2c3440;      /* Softer, readable header background */
+  --md-primary-fg-color: #f5f5f5;      /* Bright white header text */
+  --md-sidebar-bg-color: #1c1f26;      /* Lighter sidebar background */
+  --md-typeset-color: #e6e6e6;         /* General text color */
+  --md-accent-fg-color: #00ff88;
+  
+  --card-bg: rgba(28, 31, 38, 0.85);
+  --card-border: rgba(68, 76, 86, 0.6);
+  --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+  --card-shadow-hover: 0 12px 28px -4px rgba(0, 255, 136, 0.25);
+  --badge-bg: rgba(0, 255, 136, 0.12);
+  --badge-text: #00ff88;
+}
+
+/* --------------------------------------------------------------------------
+   2. Global Typography & Scrollbar
+   -------------------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Sleek Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+/* Sidebar navigation indentation */
+.md-sidebar__inner .md-nav__item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.md-nav__list {
+  margin-left: 0px;
+}
+
+.md-nav__list .md-nav__list {
+  margin-left: 8px;
+  border-left: 1px solid rgba(148, 163, 184, 0.2);
+  padding-left: 6px;
+}
+
+.md-nav__item a {
+  display: block;
+  padding: 1px 2px;
+}
+
+.md-nav__link {
+  border-radius: var(--radius-sm);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link {
+  color: #e0e0e0 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  color: #00ff88 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: #00ff88 !important;
+  font-weight: bold;
+}
+
+/* Header & Navigation Bar Text */
+.md-header__topic,
+.md-tabs__link {
+  font-weight: bold !important;
+}
+
+.md-header {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.md-tabs {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Headings */
+[data-md-color-scheme="default"] h1,
+[data-md-color-scheme="default"] h2,
+[data-md-color-scheme="default"] h3,
+[data-md-color-scheme="default"] h4 {
+  color: #1e1e1e !important;
+}
+
+[data-md-color-scheme="slate"] h1,
+[data-md-color-scheme="slate"] h2,
+[data-md-color-scheme="slate"] h3,
+[data-md-color-scheme="slate"] h4 {
+  color: #f0f0f0 !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. Code Blocks & Syntax Styling (Original Specs)
+   -------------------------------------------------------------------------- */
+.highlight {
+  border-radius: var(--radius-md) !important;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+  margin: 1.2em 0 !important;
+}
+
+pre code {
+  border-radius: 8px !important;
+  padding: 1rem !important;
+  display: block !important;
+  overflow-x: auto !important;
+  font-family: 'Fira Code', 'Source Code Pro', monospace !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Inline code - Light mode */
+[data-md-color-scheme="default"] :not(pre) > code {
+  background-color: #f0f4f8 !important;
+  color: #d63384 !important;
+}
+
+/* Inline code - Dark mode */
+[data-md-color-scheme="slate"] :not(pre) > code {
+  background-color: #1e2a33 !important;
+  color: #80ffea !important;
+}
+
+/* Code block - Light mode */
+[data-md-color-scheme="default"] pre code {
+  background-color: #f7f7f9 !important;
+  color: #2d2d2d !important;
+  border: 1px solid #cccccc;
+}
+
+/* Code block - Dark mode */
+[data-md-color-scheme="slate"] pre code {
+  background-color: #1e1e2e !important;
+  color: #eeeeee !important;
+  border: 1px solid #444c56;
+}
+
+/* Shell prompt styling */
+pre[class*="language-sh"] code span.__span::before,
+pre[class*="language-bash"] code span.__span::before,
+pre[class*="language-shell"] code span.__span::before {
+  content: "$ ";
+  color: #81c784;
+  margin-right: 0.3rem;
+}
+
+pre code span.__span:empty::before {
+  content: "" !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. Blockquotes & Admonitions (Original Specs)
+   -------------------------------------------------------------------------- */
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  border-left: 5px solid #00ff88 !important;
+}
+
+[data-md-color-scheme="default"] .md-typeset blockquote {
+  border-left: 5px solid #888888 !important;
+}
+
+/* Slim blockquote - Dark mode */
+[data-md-color-scheme="slate"] blockquote {
+  background-color: #1f1f2b;
+  border-left: 2px solid #00ff88;
+  color: #cccccc;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  border-radius: 3px;
+}
+
+/* Slim blockquote - Light mode */
+[data-md-color-scheme="default"] blockquote {
+  background-color: #f9f9f9;
+  border-left: 2px solid #4caf50;
+  color: #333333;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  border-radius: 3px;
+}
+
+/* --------------------------------------------------------------------------
+   5. Links (Original Neon Green Specs)
+   -------------------------------------------------------------------------- */
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #00ff88 !important;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: #00fff8 !important;
+  text-shadow: 0 0 1px #00ff88, 0 0 2px #00ff88;
+  text-decoration: underline;
+}
+
+[data-md-color-scheme="default"] .md-typeset a {
+  color: #1a73e8;
+  transition: color 0.3s ease;
+}
+
+[data-md-color-scheme="default"] .md-typeset a:hover {
+  color: #004dcc;
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   6. Mermaid Diagram Styling Container
+   -------------------------------------------------------------------------- */
+.mermaid {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
